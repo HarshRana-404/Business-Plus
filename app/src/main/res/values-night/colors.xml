@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main_color">#4763FF</color>
+    <color name="cv_selection_color">#B2BEFF</color>
+    <color name="nav_bar_color">#242424</color>
+    <color name="gray">#848484</color>
+    <color name="red">#FF6F64</color>
+    <color name="green">#D1FF9B</color>
+    <color name="main_bg">#141414</color>
+    <color name="main_bg_off">#282828</color>
+    <color name="main_bg_opposite">#FFFFFF</color>
+    <color name="text_color">#414141</color>
+    <color name="cv_text_color">@color/white</color>
+</resources>

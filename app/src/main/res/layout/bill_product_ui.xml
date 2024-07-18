@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:gravity="center_vertical"
+        android:background="@color/main_bg_off"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:weightSum="14">
+        <TextView
+            android:id="@+id/tv_bill_product_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:text="Product Name Goes Here Even if its too long"
+            android:fontFamily="@font/khand_bold"
+            android:textSize="18sp"
+            android:textColor="@color/main_color"
+            android:layout_weight="3"/>
+        <TextView
+            android:id="@+id/tv_bill_product_quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="1"
+            android:fontFamily="@font/khand_bold"
+            android:textSize="18sp"
+            android:layout_weight="2"
+            android:textColor="@color/black"
+            android:layout_marginLeft="0dp"/>
+        <TextView
+            android:id="@+id/tv_bill_product_gst_per"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="18%"
+            android:fontFamily="@font/khand_bold"
+            android:textSize="18sp"
+            android:layout_weight="2"
+            android:textColor="@color/gray"
+            android:layout_marginHorizontal="4dp"/>
+        <TextView
+            android:id="@+id/tv_bill_product_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="₹20000"
+            android:fontFamily="@font/khand_bold"
+            android:textSize="18sp"
+            android:layout_weight="3"
+            android:maxLength="8"
+            android:textColor="@color/main_color"/>
+
+        <TextView
+            android:id="@+id/tv_bill_product_total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="₹200000"
+            android:layout_weight="3"
+            android:fontFamily="@font/khand_bold"
+            android:textSize="18sp"
+            android:maxLength="8"
+            android:textColor="@color/main_color"
+            android:layout_marginLeft="4dp"/>
+
+        <ImageButton
+            android:id="@+id/ib_bill_product_delete"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_delete"
+            android:background="@color/main_bg_off"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.BillsFragment"
+    android:gravity="center"
+    android:background="@color/main_bg">
+
+    <TextView
+        android:id="@+id/tv_products_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Products"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textColor="@color/main_color"
+        android:visibility="visible"/>
+    <EditText
+        android:id="@+id/et_product_search"
+        style="@style/et_focus_unfocus"
+        android:hint="Search product"
+        android:drawablePadding="8dp"
+        android:inputType="textCapWords"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/tv_products_title"
+        android:layout_marginHorizontal="8dp"/>
+    <ProgressBar
+        android:id="@+id/pb_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_product_search"
+        android:indeterminateTint="@color/main_color"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_products"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/et_product_search"
+        />
+    <ImageButton
+        android:id="@+id/ib_add_product"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/fab_bg"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        app:backgroundTint="@color/main_color"
+        android:src="@drawable/ic_add_product" />
+
+</RelativeLayout>

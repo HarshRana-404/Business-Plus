@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="nav_bar_color">#F1F1F1</color>
+    <color name="main_color">#4763FF</color>
+    <color name="orange">#FF9640</color>
+    <color name="cv_selection_color">#B2BEFF</color>
+    <color name="gray">#848484</color>
+    <color name="red">#FF6F64</color>
+    <color name="green">#D1FF9B</color>
+    <color name="main_bg">#FFFFFF</color>
+    <color name="main_bg_off">#F4F4F4</color>
+    <color name="main_bg_opposite">#414141</color>
+    <color name="text_color">#FFFFFF</color>
+    <color name="cv_text_color">@color/gray</color>
+</resources>

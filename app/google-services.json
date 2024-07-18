@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "943476459638",
+    "project_id": "business-plus-26679",
+    "storage_bucket": "business-plus-26679.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943476459638:android:7b78b03fdc0ceb4873f757",
+        "android_client_info": {
+          "package_name": "com.harsh.businessplus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEaz2VBkBgUAR_A8vE2bu_gJKqUAJ74sQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

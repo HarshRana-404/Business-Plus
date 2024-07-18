@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="8dp"
+    android:layout_gravity="center_horizontal"
+    android:clickable="true"
+    android:id="@+id/cv_product"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:background="@color/main_bg_off">
+
+        <ImageView
+            android:id="@+id/iv_product_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_product_focused"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"/>
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_product_image"
+            android:textAlignment="textStart"
+            android:textSize="22sp"
+            android:text="Product Name"
+            android:textColor="@color/main_color"/>
+        <TextView
+            android:id="@+id/product_gst_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_name"
+            android:layout_toRightOf="@id/iv_product_image"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:text="18%"
+            android:textColor="@color/main_bg_opposite"
+            android:layout_marginRight="8dp"/>
+        <TextView
+            android:id="@+id/product_hsn_sac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_name"
+            android:layout_toRightOf="@id/product_gst_percentage"
+            android:textAlignment="center"
+            android:layout_marginRight="8dp"
+            android:textSize="18sp"
+            android:text="HSN / SAC"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:id="@+id/tv_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_name"
+            android:layout_toRightOf="@id/product_hsn_sac"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:text="₹1500"
+            android:textColor="@color/main_color"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/white">
+
+    <item android:id="@+id/nav_bar">
+        <shape android:shape="rectangle">
+            <corners
+                android:topLeftRadius="8dp"
+                android:topRightRadius="8dp"
+                />
+            <solid
+                android:color="@color/nav_bar_color"/>
+        </shape>
+    </item>
+
+</ripple>

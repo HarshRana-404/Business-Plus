@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/main_bg">
+
+    <ImageView
+        android:id="@+id/iv_splash_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/business_plus_ic"
+        android:layout_marginBottom="16dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_splash_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Business Plus"
+        android:fontFamily="@font/khand_bold"
+        android:textSize="40sp"
+        android:textColor="@color/main_bg_opposite"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_splash_tag_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Taking your business to digital heights..."
+        android:fontFamily="@font/khand_semi_bold"
+        android:textSize="20sp"
+        android:textColor="@color/gray"
+        android:layout_marginBottom="8dp"
+        android:visibility="invisible"/>
+
+</LinearLayout>

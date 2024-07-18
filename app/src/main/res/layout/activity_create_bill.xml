@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateBillActivity"
+    android:background="@color/main_bg"
+    android:orientation="vertical"
+    android:weightSum="6"
+    android:padding="4dp">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_weight="5"
+        android:background="@color/main_bg"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginVertical="16dp"
+        android:paddingHorizontal="64dp"
+        >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_vp_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:background="@drawable/fab_bg"
+            android:layout_alignParentLeft="true"
+            app:backgroundTint="@color/main_color"
+            android:foreground="@drawable/ic_arrow_back"
+            android:foregroundGravity="center"
+            app:fabCustomSize="64dp"
+            app:elevation="0dp"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_vp_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:background="@drawable/fab_bg"
+            android:layout_alignParentRight="true"
+            app:backgroundTint="@color/main_color"
+            android:foreground="@drawable/ic_arrow_forward"
+            android:foregroundGravity="center"
+            app:fabCustomSize="64dp"
+            app:elevation="0dp"/>
+
+        <Button
+            android:id="@+id/btn_create_bill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/khand_bold"
+            android:text="CREATE BILL"
+            android:textColor="@color/text_color"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:drawableRight="@drawable/ic_arrow_forward"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/btn_vp_prev"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

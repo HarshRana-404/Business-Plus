@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/main_bg_opposite">
+
+<item android:id="@+id/spinner_ripple">
+    <shape
+        android:shape="rectangle">
+        <stroke
+            android:width="3dp"
+            android:color="@color/gray"
+            />
+        <corners
+            android:radius="5dp"/>
+        <solid
+            android:color="@color/main_bg">
+
+        </solid>
+
+    </shape>
+</item>
+
+</ripple>

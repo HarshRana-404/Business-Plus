@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:backgroundTint="@color/main_bg">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/business_plus_ic"
+        android:layout_marginBottom="32dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="LOGIN"
+        android:fontFamily="@font/khand_bold"
+        android:textSize="44sp"
+        android:textColor="@color/main_color"
+        android:layout_marginBottom="32dp"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        style="@style/et_focus_unfocus"
+        android:hint="Email"
+        android:drawableLeft="@drawable/mail_bg"
+        android:drawablePadding="8dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp"/>
+    <EditText
+        android:id="@+id/et_password"
+        style="@style/et_focus_unfocus"
+        android:hint="Password"
+        android:drawableLeft="@drawable/lock_bg"
+        android:drawablePadding="8dp"
+        android:inputType="textPassword"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/khand_bold"
+        android:text="LOGIN"
+        android:textColor="@color/text_color"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Not a user? Register Here"
+        android:textAlignment="center"
+        android:textColor="@color/main_color"
+        android:fontFamily="@font/khand_semi_bold"
+        android:textSize="16sp"
+        android:onClick="goToRegistration"
+        />
+
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.BillProductsFragment"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_product_focused"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="ADD PRODUCTS"
+        android:fontFamily="@font/khand_bold"
+        android:textSize="32sp"
+        android:textColor="@color/main_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginVertical="8dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:weightSum="4">
+
+            <AutoCompleteTextView
+                android:id="@+id/actv_bill_product_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_bg"
+                android:padding="16dp"
+                android:hint="Select Product"
+                android:layout_weight="3"
+                android:textSize="16sp"
+                android:inputType="textCapSentences"
+                android:layout_marginHorizontal="2dp"
+                android:singleLine="true"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_bill_product_quantity"
+                style="@style/et_focus_unfocus"
+                android:hint="Quantity"
+                android:inputType="numberDecimal"
+                android:textColor="@color/main_color"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:layout_marginHorizontal="2dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_bill_product_price"
+                style="@style/et_focus_unfocus"
+                android:hint="Price"
+                android:inputType="numberDecimal"
+                android:textColor="@color/main_color"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:layout_marginHorizontal="2dp"/>
+            <EditText
+                android:layout_width="0dp"
+                android:id="@+id/et_bill_product_hsn_sac"
+                style="@style/et_focus_unfocus"
+                android:hint="HSN / SAC Code"
+                android:inputType="numberSigned"
+                android:textSize="16sp"
+                android:textColor="@color/main_color"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:layout_marginHorizontal="2dp"/>
+            <Spinner
+                android:id="@+id/sp_bill_product_gst_percentage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_bg"
+                android:hint="State"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:entries="@array/gst_percentages"
+                android:layout_marginHorizontal="2dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_add_bill_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="64dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/khand_bold"
+        android:text="ADD"
+        android:textColor="@color/text_color"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_bill_product_table_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:gravity="center_vertical"
+        android:background="@color/main_color"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tv_bill_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Product"
+            android:fontFamily="@font/khand_bold"
+            android:textSize="22sp"
+            android:maxLength="18"
+            android:textColor="@color/main_bg"
+            android:layout_marginLeft="4dp"/>
+        <TextView
+            android:id="@+id/tv_bill_product_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Quantity"
+            android:fontFamily="@font/khand_bold"
+            android:layout_toRightOf="@id/tv_bill_product_name"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="4dp"/>
+        <TextView
+            android:id="@+id/tv_bill_product_gst_per"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="GST %"
+            android:fontFamily="@font/khand_bold"
+            android:layout_toRightOf="@id/tv_bill_product_quantity"
+            android:textSize="22sp"
+            android:textColor="@color/main_bg"
+            android:layout_marginHorizontal="4dp"/>
+        <TextView
+            android:id="@+id/tv_bill_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Price"
+            android:fontFamily="@font/khand_bold"
+            android:layout_toRightOf="@id/tv_bill_product_gst_per"
+            android:layout_marginHorizontal="4dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_bill_product_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Total"
+            android:fontFamily="@font/khand_bold"
+            android:layout_toRightOf="@id/tv_bill_product_price"
+            android:layout_alignParentRight="true"
+            android:textSize="22sp"
+            android:textColor="@color/main_bg"
+            android:layout_marginHorizontal="4dp" />
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_bill_products"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</LinearLayout>

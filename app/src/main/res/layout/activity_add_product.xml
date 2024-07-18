@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/main_bg"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:backgroundTint="@color/main_bg">
+        <ImageButton
+            android:id="@+id/ib_product_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/fab_bg"
+            app:backgroundTint="@color/main_color"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_gravity="left"/>
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_product_focused"
+            android:layout_marginBottom="16dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_add_product_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="ADD NEW PRODUCT"
+            android:fontFamily="@font/khand_bold"
+            android:textSize="40sp"
+            android:textColor="@color/main_color"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/et_product_name"
+            style="@style/et_focus_unfocus"
+            android:hint="Product Name"
+            android:drawableLeft="@drawable/product_bg"
+            android:drawablePadding="8dp"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/et_product_price"
+            style="@style/et_focus_unfocus"
+            android:hint="Product Price"
+            android:drawableLeft="@drawable/price_bg"
+            android:drawablePadding="8dp"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/et_product_hsn_sac"
+            style="@style/et_focus_unfocus"
+            android:hint="HSN / SAC Code"
+            android:drawableLeft="@drawable/number_bg"
+            android:drawablePadding="8dp"
+            android:inputType="numberSigned"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="GST %: "
+                android:fontFamily="@font/khand_bold"
+                android:textSize="20sp"
+                android:textColor="@color/main_bg_opposite"
+                android:layout_weight="1"
+                android:layout_gravity="center"/>
+
+            <Spinner
+                android:id="@+id/sp_product_gst_percentage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_bg"
+                android:hint="State"
+                android:layout_weight="4"
+                android:padding="16dp"
+                android:entries="@array/gst_percentages"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_add_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/khand_bold"
+            android:text="ADD"
+            android:textColor="@color/text_color"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+        <Button
+            android:id="@+id/btn_add_product_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:background="@drawable/btn_bg"
+            android:backgroundTint="@color/red"
+            android:fontFamily="@font/khand_bold"
+            android:text="CANCEL"
+            android:textColor="@color/text_color"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+</ScrollView>

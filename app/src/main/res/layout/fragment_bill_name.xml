@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.BillNameFragment"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_bill_focused"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="BILL NAME"
+        android:fontFamily="@font/khand_bold"
+        android:textSize="32sp"
+        android:textColor="@color/main_color"
+        android:layout_marginBottom="16dp"/>
+    <EditText
+        android:id="@+id/et_bill_name"
+        style="@style/et_focus_unfocus"
+        android:hint="Bill name"
+        android:drawableLeft="@drawable/bill_bg"
+        android:drawablePadding="8dp"
+        android:inputType="textCapCharacters"
+        android:layout_marginBottom="32dp"/>
+    <Button
+        android:id="@+id/btn_bill_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:background="@drawable/btn_only_stroke_bg"
+        android:fontFamily="@font/khand_bold"
+        android:text="SELECT BILL DATE"
+        android:textColor="@color/main_color"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+
+
+</LinearLayout>

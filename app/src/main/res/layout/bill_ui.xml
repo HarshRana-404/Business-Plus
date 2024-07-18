@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:id="@+id/cv_bill">
+
+    <RelativeLayout
+        android:id="@+id/rl_bill_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:background="@color/main_bg_off"
+        android:foreground="?attr/selectableItemBackgroundBorderless">
+
+        <ImageView
+            android:id="@+id/iv_bill"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:src="@drawable/ic_bill_focused"
+            android:layout_marginRight="32dp"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:id="@+id/tv_bill_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_bill"
+            android:textSize="22sp"
+            android:text="Bill Name"
+            android:textColor="@color/main_color"/>
+        <TextView
+            android:id="@+id/tv_bill_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_bill_name"
+            android:layout_toRightOf="@id/iv_bill"
+            android:textSize="20sp"
+            android:text="Bill Amount ₹"
+            android:textColor="@color/main_bg_opposite"/>
+        <TextView
+            android:id="@+id/tv_bill_client_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_bill_amount"
+            android:layout_toRightOf="@id/iv_bill"
+            android:textSize="18sp"
+            android:text="Client: "
+            android:textColor="@color/gray"/>
+        <TextView
+            android:id="@+id/tv_bill_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_bill_client_name"
+            android:layout_toRightOf="@id/iv_bill"
+            android:textAlignment="textEnd"
+            android:textSize="16sp"
+            android:text="Date: "
+            android:textColor="@color/main_bg_opposite"
+            android:layout_marginRight="4dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
